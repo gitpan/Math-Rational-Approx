@@ -1,0 +1,30 @@
+---
+abstract: unknown
+author:
+  - 'The Smithsonian Astrophysical Observatory'
+build_requires:
+  ExtUtils::MakeMaker: 6.36
+  Math::Trig: 0
+  Test::Exception: 0
+  Test::More: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.36
+dynamic_config: 0
+generated_by: 'Module::Install version 1.06, CPAN::Meta::Converter version 2.120921'
+license: unknown
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Math-Rational-Approx
+no_index:
+  directory:
+    - inc
+    - t
+    - xt
+requires:
+  Moo: 0
+  MooX::Types::MooseLike::Numeric: 0
+resources:
+  license: http://opensource.org/licenses/gpl-3.0.html
+  repository: http://bitbucket.org/djerius/math-rational-approx
+version: 0.01_01
