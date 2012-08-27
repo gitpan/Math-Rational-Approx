@@ -1,10 +1,10 @@
 {
-   "abstract" : "unknown",
+   "abstract" : "approximate a number with a rational number",
    "author" : [
-      "The Smithsonian Astrophysical Observatory"
+      "Diab Jerius  <djerius@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Module::Install version 1.06, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Module::Install version 1.06, CPAN::Meta::Converter version 2.120630",
    "license" : [
       "unknown"
    ],
@@ -36,19 +36,22 @@
       },
       "runtime" : {
          "requires" : {
+            "Math::BigFloat" : "0",
             "Moo" : "0",
-            "MooX::Types::MooseLike::Numeric" : "0"
+            "MooX::Types::MooseLike" : "0",
+            "POSIX" : "0",
+            "Params::Validate" : "0"
          }
       }
    },
    "release_status" : "testing",
    "resources" : {
+      "bugtracker" : {
+         "web" : "http://rt.cpan.org/Public/Dist/Display.html?Name=Math-Rational-Approx"
+      },
       "license" : [
          "http://opensource.org/licenses/gpl-3.0.html"
-      ],
-      "repository" : {
-         "url" : "http://bitbucket.org/djerius/math-rational-approx"
-      }
+      ]
    },
-   "version" : "0.01_01"
+   "version" : "0.00_02"
 }

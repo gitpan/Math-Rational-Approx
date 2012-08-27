@@ -26,7 +26,7 @@ use warnings;
 use Carp;
 
 
-our $VERSION = '0.00_01';
+our $VERSION = '0.00_02';
 
 use base 'Exporter';
 our %EXPORT_TAGS = ( all => [ qw( maxD contfrac contfrac_nd ) ],
@@ -359,13 +359,16 @@ No bugs have been reported.
 
 Please report any bugs or feature requests to
 C<bug-math-rational-approx@rt.cpan.org>, or through the web interface at
-L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Math-Rational-Approx>.
+L<http://rt.cpan.org/Public/Dist/Display.html?Name=Math-Rational-Approx>.
 
 =head1 SEE ALSO
 
 =for author to fill in:
     Any other resources (e.g., modules or files) that are related.
 
+=head1 AUTHOR
+
+Diab Jerius  E<lt>djerius@cpan.orgE<gt>
 
 =head1 LICENSE AND COPYRIGHT
 
@@ -384,8 +387,5 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-=head1 AUTHOR
-
-Diab Jerius  E<lt>djerius@cpan.orgE<gt>
 
 

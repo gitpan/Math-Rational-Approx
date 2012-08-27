@@ -3,16 +3,29 @@ use warnings;
 use inc::Module::Install;
 
 name 'Math-Rational-Approx';
-repository 'http://bitbucket.org/djerius/math-rational-approx';
+repository {
+    url => 'https://bitbucket.org/djerius/math-rational-approx',
+    web => 'https://bitbucket.org/djerius/math-rational-approx',
+    type => 'hg',
+};
+
+auto_set_bugtracker;
+
 license 'gpl3';
-all_from 'lib/Math/Rational/Approx/ContFrac.pm';
+all_from 'lib/Math/Rational/Approx.pm';
 
 author_tests( 'xt' );
 
-requires 'Moo';
-requires 'MooX::Types::MooseLike::Numeric';
+requires 'Math::BigFloat';
 
-build_requires 'Test::More';
+requires 'Moo';
+requires 'MooX::Types::MooseLike';
+requires 'POSIX';
+requires 'Params::Validate';
+
+author_requires 'Test::Pod';
+author_requires 'Test::Pod::Coverage';
+author_requires 'Test::Perl::Critic';
 
 test_requires 'Test::More';
 test_requires 'Test::Exception';

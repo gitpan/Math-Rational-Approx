@@ -25,7 +25,7 @@ use strict;
 use warnings;
 use Carp;
 
-our $VERSION = '0.00_01';
+our $VERSION = '0.00_02';
 
 use Math::BigFloat;
 
@@ -219,23 +219,26 @@ No bugs have been reported.
 
 Please report any bugs or feature requests to
 C<bug-math-rational-approx-contfrac@rt.cpan.org>, or through the web interface at
-L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Math-Rational-Approx>.
+L<http://rt.cpan.org/Public/Dist/Display.html?Name=Math-Rational-Approx>.
 
 =head1 SEE ALSO
 
-=for author to fill in:
-    Any other resources (e.g., modules or files) that are related.
+L<Math::BigFloat>, L<Moo>, L<MooX::Types::MooseLike>, L<Params::Validate>, L<Math::Rational::Approx>.
 
+
+=head1 AUTHOR
+
+Diab Jerius  E<lt>djerius@cpan.orgE<gt>
 
 
 =head1 LICENSE AND COPYRIGHT
 
 Copyright (c) 2012 The Smithsonian Astrophysical Observatory
 
-Math::Rational::Approx::ContFrac is free software: you can
-redistribute it and/or modify it under the terms of the GNU General
-Public License as published by the Free Software Foundation, either
-version 3 of the License, or (at your option) any later version.
+Math::Rational::Approx is free software: you can redistribute it
+and/or modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
 
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -244,9 +247,5 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-=head1 AUTHOR
-
-Diab Jerius  E<lt>djerius@cpan.orgE<gt>
 
 

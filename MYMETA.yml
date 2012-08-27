@@ -1,7 +1,7 @@
 ---
-abstract: unknown
+abstract: 'approximate a number with a rational number'
 author:
-  - 'The Smithsonian Astrophysical Observatory'
+  - 'Diab Jerius  <djerius@cpan.org>'
 build_requires:
   ExtUtils::MakeMaker: 6.36
   Math::Trig: 0
@@ -10,7 +10,7 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: 6.36
 dynamic_config: 0
-generated_by: 'Module::Install version 1.06, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Module::Install version 1.06, CPAN::Meta::Converter version 2.120630'
 license: unknown
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -22,9 +22,12 @@ no_index:
     - t
     - xt
 requires:
+  Math::BigFloat: 0
   Moo: 0
-  MooX::Types::MooseLike::Numeric: 0
+  MooX::Types::MooseLike: 0
+  POSIX: 0
+  Params::Validate: 0
 resources:
+  bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Math-Rational-Approx
   license: http://opensource.org/licenses/gpl-3.0.html
-  repository: http://bitbucket.org/djerius/math-rational-approx
-version: 0.01_01
+version: 0.00_02
