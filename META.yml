@@ -35,4 +35,4 @@ resources:
     type: hg
     url: https://bitbucket.org/djerius/math-rational-approx
     web: https://bitbucket.org/djerius/math-rational-approx
-version: 0.00_02
+version: 0.00_03

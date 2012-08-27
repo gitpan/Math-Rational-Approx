@@ -26,7 +26,7 @@ use warnings;
 use Carp;
 
 
-our $VERSION = '0.00_02';
+our $VERSION = '0.00_03';
 
 use Params::Validate qw[ validate_pos ARRAYREF ];
 use Math::Rational::Approx;

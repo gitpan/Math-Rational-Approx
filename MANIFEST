@@ -20,8 +20,6 @@ Makefile.PL
 MANIFEST			This list of files
 MANIFEST.SKIP
 META.yml
-MYMETA.json
-MYMETA.yml
 README
 t/00-load.t
 t/contfrac-oo-iface.t
