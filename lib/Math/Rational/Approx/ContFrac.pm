@@ -25,7 +25,7 @@ use strict;
 use warnings;
 use Carp;
 
-our $VERSION = '0.00_03';
+our $VERSION = '0.01';
 
 use Math::BigFloat;
 

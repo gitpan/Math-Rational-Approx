@@ -21,6 +21,8 @@ throws_ok { contfrac_nd( ) } qr/0 parameters/, "no parameters";
 
 throws_ok { contfrac_nd( 1 ) } qr/not one of the allowed types/, "terms != ARRAYREF";
 
+lives_ok { contfrac_nd( contfrac( 0.0625, 2 ) ) } "contfrac_nd( contfrac( ... ) )";
+
 done_testing;
 
 

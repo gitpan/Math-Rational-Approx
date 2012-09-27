@@ -26,7 +26,7 @@ use warnings;
 use Carp;
 
 
-our $VERSION = '0.00_03';
+our $VERSION = '0.01';
 
 use base 'Exporter';
 our %EXPORT_TAGS = ( all => [ qw( maxD contfrac contfrac_nd ) ],
@@ -162,11 +162,12 @@ sub contfrac {
 
 sub contfrac_nd {
 
-    my ( $terms ) = validate_pos( @_, { type => ARRAYREF } );
+	# ignore extra parameter to ease use of contfrac_nd( contfrac ( ... ) )
+    my ( $terms ) = validate_pos( @_, { type => ARRAYREF }, 0 );
     my @p = reverse @$terms;
 
     my $n = Math::BigInt->bone;
-    my $d = shift @p;
+    my $d = Math::BigInt->new( (shift @p) );
 
     for my $p ( @p ) {
 
@@ -256,9 +257,11 @@ will be continued from the last calculation.
   ( $n, $d, $bounds ) = maxD( $x, $maxD, $bounds );
 
 Calculate the rational number approximation to C<$x> with denominator
-no greater than C<$maxD>.  The optional argument, C<$bounds>, is a
-reference to a four element array containing the initial bounds on the
-region to search.  It takes the form
+no greater than C<$maxD>.
+
+The optional argument, C<$bounds>, is a reference to a four element
+array containing the initial bounds on the region to search.  It takes
+the form
 
   bounds => [ a, b, c, d ]
 
@@ -266,6 +269,10 @@ where the elements are all non-negative integers and the bounds are
 given by
 
   a/b < x < c/d
+  b < maxD && d < maxD
+
+The behavior is undefined if the latter condition is not yet, unless
+the bounds are the result of a previous run of B<maxD>.
 
 By default it searches from C<float(x)> to C<float(x)+1>.
 
@@ -339,7 +346,7 @@ B<contfrac>.
   ( $nominator, $denominator ) = contfrac_nd( $terms );
 
 Generate the nominator and denominator from the terms created by
-B<contfrac>.
+B<contfrac>.  They are returned as B<Math::BigInt> objects.
 
 =back
 
