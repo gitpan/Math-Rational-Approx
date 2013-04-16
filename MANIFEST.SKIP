@@ -10,3 +10,7 @@ t/.*.stderr
 blibdirs
 ^MYMETA
 ^cover_db
+^Build$
+^_build
+\.gz$
+Build.PL

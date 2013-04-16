@@ -54,8 +54,6 @@ has bounds => (
   default => sub { [] },
 );
 
-sub bounds { [ @{$_[0]} ] }
-
 sub BUILD {
 
 	my $self = shift;

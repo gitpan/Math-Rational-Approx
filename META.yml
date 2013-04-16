@@ -25,7 +25,7 @@ no_index:
 requires:
   Math::BigFloat: 0
   Moo: 0
-  MooX::Types::MooseLike: 0
+  MooX::Types::MooseLike::Numeric: 0
   POSIX: 0
   Params::Validate: 0
 resources:
@@ -35,4 +35,4 @@ resources:
     type: hg
     url: https://bitbucket.org/djerius/math-rational-approx
     web: https://bitbucket.org/djerius/math-rational-approx
-version: 0.01
+version: 0.01_01

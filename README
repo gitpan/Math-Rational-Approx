@@ -1,50 +1,26 @@
-Math-Rational-Approx
+NAME
+    Math::Rational::Approx - approximate a number with a rational number
 
-Find rational number approximations to real numbers.
+DESCRIPTION
 
-INSTALLATION
-
-To install this module, run the following commands:
-
-	perl Makefile.PL
-	make
-	make test
-	make install
+    This module provide various means for finding rational number
+    approximations to real numbers including using Farey's
+    sequence or continued fractions.
 
 
-DEPENDENCIES
+LICENSE AND COPYRIGHT
+    Copyright (c) 2012 The Smithsonian Astrophysical Observatory
 
-Runtime:
+    Math::Rational::Approx is free software: you can redistribute it and/or
+    modify it under the terms of the GNU General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or (at
+    your option) any later version.
 
-  Moo
-  MooX::Types::MooseLike::Numeric
+    This program is distributed in the hope that it will be useful, but
+    WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+    Public License for more details.
 
-Testing:
+    You should have received a copy of the GNU General Public License along
+    with this program. If not, see <http://www.gnu.org/licenses/>.
 
-  Test::More
-  Test::Exception
-  Math::Trig
-
-
-COPYRIGHT
-
---8<--8<--8<--8<--
-
-Copyright (C) 2012 Smithsonian Astrophysical Observatory
-
-This file is part of Math-Rational-Approx
-
-Math-Rational-Approx is free software: you can redistribute it and/or
-modify it under the terms of the GNU General Public License as
-published by the Free Software Foundation, either version 3 of the
-License, or (at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
--->8-->8-->8-->8--
