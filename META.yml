@@ -1,38 +1,36 @@
 ---
 abstract: 'approximate a number with a rational number'
 author:
-  - 'Diab Jerius  <djerius@cpan.org>'
+  - 'Diab Jerius  E<lt>djerius@cpan.orgE<gt>'
 build_requires:
-  ExtUtils::MakeMaker: 6.36
   Math::Trig: 0
   Test::Exception: 0
   Test::More: 0
 configure_requires:
-  ExtUtils::MakeMaker: 6.36
-distribution_type: module
+  Module::Build: 0.42
 dynamic_config: 1
-generated_by: 'Module::Install version 1.06'
-license: gpl3
+generated_by: 'Module::Build version 0.4203, CPAN::Meta::Converter version 2.120921'
+license: gpl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Math-Rational-Approx
-no_index:
-  directory:
-    - inc
-    - t
-    - xt
+provides:
+  Math::Rational::Approx:
+    file: lib/Math/Rational/Approx.pm
+    version: 0.02
+  Math::Rational::Approx::ContFrac:
+    file: lib/Math/Rational/Approx/ContFrac.pm
+    version: 0.01
+  Math::Rational::Approx::MaxD:
+    file: lib/Math/Rational/Approx/MaxD.pm
+    version: 0.01
 requires:
-  Math::BigFloat: 0
   Moo: 0
   MooX::Types::MooseLike::Numeric: 0
   POSIX: 0
   Params::Validate: 0
 resources:
-  bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Math-Rational-Approx
-  license: http://opensource.org/licenses/gpl-3.0.html
-  repository:
-    type: hg
-    url: https://bitbucket.org/djerius/math-rational-approx
-    web: https://bitbucket.org/djerius/math-rational-approx
-version: 0.01_01
+  license: http://www.gnu.org/licenses/gpl-3.0.txt
+  repository: https://bitbucket.org/djerius/math-rational-approx
+version: 0.02

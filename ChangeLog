@@ -1,4 +1,30 @@
-2013-04-15 22:50 -0400  Diab Jerius  <djerius@cpan.org>  (cc2f1de12c8f [tip])
+2014-01-25 21:40 -0500  djerius  <djerius@cfa.harvard.edu>  (bedf886bc8b0 [tip])
+
+	* .hgtags:
+	Added tag 0.02 for changeset ea29d803bce3
+
+2014-01-25 21:40 -0500  djerius  <djerius@cfa.harvard.edu>  (ea29d803bce3 [0.02])
+
+	* Changes, lib/Math/Rational/Approx.pm:
+	update logs and version for release
+
+2014-01-25 21:38 -0500  djerius  <djerius@cfa.harvard.edu>  (eb4f771be819)
+
+	* ChangeLog: deleted file.
+	* ChangeLog:
+	ChangeLog is a derived product; don't track
+
+2013-04-15 22:55 -0400  Diab Jerius  <djerius@cpan.org>  (b86734c5d0a4)
+
+	* .hgtags:
+	Added tag 0.01_01 for changeset 77fc1e3eea21
+
+2013-04-15 22:55 -0400  Diab Jerius  <djerius@cpan.org>  (77fc1e3eea21 [0.01_01])
+
+	* ChangeLog, Changes, lib/Math/Rational/Approx.pm:
+	update logs and version for release
+
+2013-04-15 22:50 -0400  Diab Jerius  <djerius@cpan.org>  (cc2f1de12c8f)
 
 	* Makefile.PL:
 	add more author requirements

@@ -26,7 +26,7 @@ use warnings;
 use Carp;
 
 
-our $VERSION = '0.01_01';
+our $VERSION = '0.02';
 
 use base 'Exporter';
 our %EXPORT_TAGS = ( all => [ qw( maxD contfrac contfrac_nd ) ],
